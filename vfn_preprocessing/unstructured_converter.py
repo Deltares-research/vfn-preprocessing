@@ -7,6 +7,80 @@ from typing import Dict, Any
 from vfn_preprocessing.base import DocumentConverter
 
 
+def _html_table_to_markdown(html: str) -> str:
+    """Convert an HTML table to Markdown format.
+    
+    Args:
+        html: HTML table string
+        
+    Returns:
+        Markdown formatted table
+    """
+    try:
+        from html.parser import HTMLParser
+        
+        class TableParser(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self.rows = []
+                self.current_row = []
+                self.current_cell = []
+                self.in_table = False
+                self.in_row = False
+                self.in_cell = False
+                
+            def handle_starttag(self, tag, attrs):
+                if tag == 'table':
+                    self.in_table = True
+                elif tag == 'tr':
+                    self.in_row = True
+                    self.current_row = []
+                elif tag in ('td', 'th'):
+                    self.in_cell = True
+                    self.current_cell = []
+                    
+            def handle_endtag(self, tag):
+                if tag == 'table':
+                    self.in_table = False
+                elif tag == 'tr':
+                    self.in_row = False
+                    if self.current_row:
+                        self.rows.append(self.current_row)
+                elif tag in ('td', 'th'):
+                    self.in_cell = False
+                    cell_text = ''.join(self.current_cell).strip()
+                    self.current_row.append(cell_text)
+                    
+            def handle_data(self, data):
+                if self.in_cell:
+                    self.current_cell.append(data)
+        
+        parser = TableParser()
+        parser.feed(html)
+        
+        if not parser.rows:
+            return html
+        
+        # Build markdown table
+        markdown_lines = []
+        
+        for i, row in enumerate(parser.rows):
+            # Escape pipe characters in cells
+            escaped_row = [cell.replace('|', '\\|') for cell in row]
+            markdown_lines.append('| ' + ' | '.join(escaped_row) + ' |')
+            
+            # Add header separator after first row
+            if i == 0:
+                separator = '|' + '|'.join([' --- ' for _ in row]) + '|'
+                markdown_lines.append(separator)
+        
+        return '\n'.join(markdown_lines)
+        
+    except Exception:
+        # Fallback to original HTML if parsing fails
+        return html
+
+
 class UnstructuredConverter(DocumentConverter):
     """Document converter using Unstructured.io library."""
 
@@ -42,9 +116,11 @@ class UnstructuredConverter(DocumentConverter):
             Dictionary with conversion metadata
             
         Note:
-            Formula elements are automatically converted to LaTeX format:
-            - Short formulas (<50 chars, single-line) use inline math: $formula$
-            - Longer/multi-line formulas use display math: $$\\nformula\\n$$
+            - Formula elements are automatically converted to LaTeX format:
+              * Short formulas (<50 chars, single-line) use inline math: $formula$
+              * Longer/multi-line formulas use display math: $$\\nformula\\n$$
+            - Table elements use metadata.text_as_html when available and are
+              converted to proper Markdown table format
         """
         from unstructured.partition.auto import partition
         
@@ -68,7 +144,16 @@ class UnstructuredConverter(DocumentConverter):
                 elif element_type == "ListItem":
                     markdown_content.append(f"- {text}")
                 elif element_type == "Table":
-                    markdown_content.append(text)
+                    # Use HTML table from metadata if available for better formatting
+                    if hasattr(element, 'metadata') and hasattr(element.metadata, 'text_as_html'):
+                        html_table = element.metadata.text_as_html
+                        if html_table:
+                            markdown_table = _html_table_to_markdown(html_table)
+                            markdown_content.append(markdown_table)
+                        else:
+                            markdown_content.append(text)
+                    else:
+                        markdown_content.append(text)
                 elif element_type == "Formula":
                     # Format formulas as inline or block LaTeX depending on length/complexity
                     formula_text = text.strip()
