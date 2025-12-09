@@ -5,9 +5,11 @@ Preprocessing of different file formats for chunking and RAG. This tool compares
 ## Features
 
 - **Multiple Converter Support**: Compare three different document processing libraries:
-  - **Unstructured.io**: Advanced document parsing with element detection
+  - **Unstructured.io**: Advanced document parsing with element detection and formula handling
   - **MarkItDown**: Microsoft's document-to-markdown converter
   - **Docling**: IBM's document understanding and conversion tool
+
+- **Formula Support**: Mathematical formulas are automatically converted to LaTeX format in Markdown (inline `$...$` for short formulas, display `$$...$$` for longer equations)
 
 - **Wide Format Support**: Process various document types including PDF, DOCX, PPTX, XLSX, HTML, and more
 

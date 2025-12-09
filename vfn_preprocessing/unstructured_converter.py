@@ -40,6 +40,11 @@ class UnstructuredConverter(DocumentConverter):
             
         Returns:
             Dictionary with conversion metadata
+            
+        Note:
+            Formula elements are automatically converted to LaTeX format:
+            - Short formulas (<50 chars, single-line) use inline math: $formula$
+            - Longer/multi-line formulas use display math: $$\\nformula\\n$$
         """
         from unstructured.partition.auto import partition
         
@@ -64,6 +69,15 @@ class UnstructuredConverter(DocumentConverter):
                     markdown_content.append(f"- {text}")
                 elif element_type == "Table":
                     markdown_content.append(text)
+                elif element_type == "Formula":
+                    # Format formulas as inline or block LaTeX depending on length/complexity
+                    formula_text = text.strip()
+                    if formula_text:
+                        # Use inline math for short formulas, display math for longer ones
+                        if len(formula_text) < 50 and '\n' not in formula_text:
+                            markdown_content.append(f"${formula_text}$")
+                        else:
+                            markdown_content.append(f"$$\n{formula_text}\n$$")
                 else:
                     markdown_content.append(text)
             

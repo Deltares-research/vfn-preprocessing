@@ -2,6 +2,7 @@
 
 import pytest
 from pathlib import Path
+from unittest.mock import Mock, patch
 from vfn_preprocessing import (
     UnstructuredConverter,
     MarkitdownConverter,
@@ -43,3 +44,37 @@ def test_converter_unsupported_format():
     
     converter = DoclingConverter()
     assert not converter.supports_format('.fake')
+
+
+def test_unstructured_formula_handling(tmp_path):
+    """Test that Formula elements are converted to LaTeX markdown format."""
+    converter = UnstructuredConverter()
+    
+    # Create mock elements with different types including Formula
+    mock_elements = [
+        Mock(category="Title", text="Test Document"),
+        Mock(category="NarrativeText", text="This is a test."),
+        Mock(category="Formula", text="E = mc^2"),
+        Mock(category="Formula", text="\\int_{0}^{\\infty} e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}"),
+    ]
+    
+    input_path = tmp_path / "test.txt"
+    output_path = tmp_path / "output.md"
+    input_path.write_text("Test content")
+    
+    # Mock the partition function to return our mock elements
+    with patch('unstructured.partition.auto.partition', return_value=mock_elements):
+        result = converter.convert(input_path, output_path)
+    
+    assert result["success"] is True
+    
+    # Check the output content
+    output_content = output_path.read_text()
+    
+    # Check that short formulas are inline
+    assert "$E = mc^2$" in output_content
+    
+    # Check that longer formulas are in display math mode
+    assert "$$\n" in output_content
+    assert "\\int_{0}^{\\infty}" in output_content
+
