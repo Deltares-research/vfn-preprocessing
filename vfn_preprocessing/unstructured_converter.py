@@ -57,19 +57,19 @@ class UnstructuredConverter(DocumentConverter):
                 
                 # Format based on element type
                 if element_type == "Title":
-                    markdown_content.append(f"# {text}\n")
+                    markdown_content.append(f"# {text}")
                 elif element_type == "NarrativeText":
-                    markdown_content.append(f"{text}\n")
+                    markdown_content.append(text)
                 elif element_type == "ListItem":
-                    markdown_content.append(f"- {text}\n")
+                    markdown_content.append(f"- {text}")
                 elif element_type == "Table":
-                    markdown_content.append(f"{text}\n")
+                    markdown_content.append(text)
                 else:
-                    markdown_content.append(f"{text}\n")
+                    markdown_content.append(text)
             
             # Write to output file
             output_path.parent.mkdir(parents=True, exist_ok=True)
-            output_path.write_text("\n".join(markdown_content), encoding='utf-8')
+            output_path.write_text("\n\n".join(markdown_content), encoding='utf-8')
             
             elapsed_time = time.time() - start_time
             

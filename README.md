@@ -21,7 +21,7 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
 
 ### Prerequisites
 
-- Python 3.9 or higher
+- Python 3.10 or higher
 - Poetry (install with `pip install poetry`)
 
 ### Install Dependencies
