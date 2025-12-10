@@ -1,5 +1,6 @@
 """Unstructured.io document converter."""
 
+import os
 import time
 from pathlib import Path
 from typing import Dict, Any
@@ -122,20 +123,53 @@ class UnstructuredConverter(DocumentConverter):
             - Table elements use metadata.text_as_html when available and are
               converted to proper Markdown table format
         """
-        from unstructured.partition.auto import partition
+        import unstructured_client
+        from unstructured_client.models import shared
         
         start_time = time.time()
         
         try:
-            # Partition the document
-            all_elements = partition(str(input_path))
-            elements = list(filter(lambda el: (el.category != "Header") and (el.category != "Footer") and (el.category != "PageBreak") and (el.category != "PageNumber"), all_elements))
+            # Partition the document using open source
+            # from unstructured.partition.auto import partition
+            # elements = partition(str(input_path))
+
+            # Initialize client with API key from environment
+            api_key = os.getenv("UNSTRUCTURED_API_KEY")
+            if not api_key:
+                print("Warning: UNSTRUCTURED_API_KEY not found in environment")
+                return {"success": False, "error": "Missing UNSTRUCTURED_API_KEY"}
+            
+            client = unstructured_client.UnstructuredClient(
+                api_key_auth=api_key
+            )
+
+            # Build request following the SDK documentation pattern
+            req = {
+                "partition_parameters": {
+                    "files": {
+                        "content": open(input_path, "rb"),
+                        "file_name": os.path.basename(input_path),
+                    },
+                    "chunking_strategy": "by_title",
+                    # "max_characters": 1024,
+                    "strategy": shared.Strategy.VLM,
+                    "vlm_model": "gpt-4o",
+                    "vlm_model_provider": "openai",
+                    "split_pdf_page": False,
+                    "split_pdf_allow_failed": True,
+                    "split_pdf_concurrency_level": 15
+                }
+            }
+            
+            # Make synchronous API call
+            res = client.general.partition(request=req)
+            elements = res.elements or []
             
             # Convert elements to markdown
             markdown_content = []
             for element in elements:
-                element_type = element.category
-                text = element.text
+                element_type = element["type"]
+                text = element["text"]
                 
                 # Format based on element type
                 if element_type == "Title":
@@ -146,8 +180,8 @@ class UnstructuredConverter(DocumentConverter):
                     markdown_content.append(f"- {text}")
                 elif element_type == "Table":
                     # Use HTML table from metadata if available for better formatting
-                    if hasattr(element, 'metadata') and hasattr(element.metadata, 'text_as_html'):
-                        html_table = element.metadata.text_as_html
+                    if "metadata" in element and "text_as_html" in element["metadata"]:
+                        html_table = element["metadata"]["text_as_html"]
                         if html_table:
                             markdown_table = _html_table_to_markdown(html_table)
                             markdown_content.append(markdown_table)
@@ -164,6 +198,9 @@ class UnstructuredConverter(DocumentConverter):
                             markdown_content.append(f"${formula_text}$")
                         else:
                             markdown_content.append(f"$$\n{formula_text}\n$$")
+                elif (element_type == "Header" or element_type == "Footer" or element_type == "PageBreak" or element_type == "PageNumber"):
+                    # Skip these elements
+                    continue
                 else:
                     markdown_content.append(text)
             
