@@ -13,6 +13,7 @@ markitdown = "^0.0.1a2"
 docling = "^2.0.0"
 click = "^8.1.0"
 rich = "^13.0.0"
+unstructured-client = "^0.42.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
