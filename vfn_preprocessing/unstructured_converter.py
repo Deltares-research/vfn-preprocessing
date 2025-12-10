@@ -128,7 +128,8 @@ class UnstructuredConverter(DocumentConverter):
         
         try:
             # Partition the document
-            elements = partition(str(input_path))
+            all_elements = partition(str(input_path))
+            elements = list(filter(lambda el: (el.category != "Header") and (el.category != "Footer") and (el.category != "PageBreak") and (el.category != "PageNumber"), all_elements))
             
             # Convert elements to markdown
             markdown_content = []
