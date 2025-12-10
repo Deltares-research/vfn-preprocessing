@@ -40,13 +40,21 @@ class DoclingConverter(DocumentConverter):
         Returns:
             Dictionary with conversion metadata
         """
-        from docling.document_converter import DocumentConverter
+        from docling.document_converter import DocumentConverter, PdfFormatOption
+        from docling.datamodel.pipeline_options import PdfPipelineOptions
+        from docling.datamodel.base_models import InputFormat
         
         start_time = time.time()
         
         try:
-            # Initialize Docling converter
-            converter = DocumentConverter()
+            # Configure pipeline options for formula           
+            pipeline_options = PdfPipelineOptions()
+            pipeline_options.do_formula_enrichment = True 
+            
+            # Initialize Docling converter with pipeline options
+            converter = DocumentConverter(format_options={
+                InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options)
+            })
             
             # Convert the document
             result = converter.convert(str(input_path))
