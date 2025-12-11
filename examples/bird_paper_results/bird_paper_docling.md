@@ -1,0 +1,199 @@
+<!-- image -->
+
+## How Different Landscape Elements Limit the Breeding Habitatof Meadow Bird Species
+
+Authors: Vliet, Roland E. van der, Dijk, Jerry van, and Wassen, Martin J.
+
+Source: Ardea, 98(2) : 203-209
+
+Published By: Netherlands Ornithologists' Union
+
+URL: https://doi.org/10.5253/078.098.0210
+
+BioOne Complete (complete.BioOne.org) is a full-text database of 200 subscribed and open-access titles in the biological, ecological, and environmental sciences published by nonprofit societies, associations, museums, institutions, and presses.
+
+Your use of this PDF, the BioOne Complete website, and all posted and associated content indicates your acceptance of BioOne's Terms of Use, available at www.bioone.org/terms-of-use.
+
+Usage of BioOne Complete content is strictly limited to personal, educational, and non - commercial use. Commercial inquiries or rights and permissions requests should be directed to the individual publisher as copyright holder.
+
+BioOne sees sustainable scholarly publishing as an inherently collaborative enterprise connecting authors, nonprofit publishers, academic institutions, research libraries, and research funders in the common goal of maximizing access to critical research.
+
+## How different landscape elements limit the breeding habitat of meadow bird species
+
+Roland E. van der Vliet 1,2,* , Jerry van Dijk 1 &amp; Martin J. Wassen 1
+
+Van der Vliet R.E., van Dijk J. &amp; Wassen M.J. 2010. How different landscape elements  limit  the  breeding  habitat  of  meadow  bird  species.  Ardea  98: 203-209.
+
+<!-- image -->
+
+Meadow bird species in the Netherlands have shown a long-term decline in numbers. This has been generally attributed to agricultural intensification, but in addition  an  increase  of  disturbing  elements  may  have  played  a  role  in  the decline. In this review we compiled data from literature to explore to what extent breeding by meadow birds (Eurasian Oystercatcher Haematopus ostralegus , Northern Lapwing Vanellus vanellus ,  Black-tailed  Godwit Limosa limosa )  is limited by disturbing landscape elements. We considered elements that can be considered 'view-obstructing' (like trees or houses), and those that can be considered 'flat' (canal, road or railway). Our review shows that breeding birds keep a  distance to both types of landscape elements, with distances ranging over 1 km for highways and village edges. Roads with high traffic intensity caused the largest disturbance. Eurasian Oystercatcher was most tolerant to the presence of landscape elements, and Black-tailed Godwit least tolerant.
+
+Key words: Black-tailed Godwit, Eurasian Oystercatcher, grassland ecosystem, habitat loss, Northern Lapwing, meadow bird, Netherlands, openness of landscape, view obstruction
+
+1 Environmental Sciences, Copernicus Institute, Utrecht University, P.O. Box 80115, 3508 TC Utrecht, The Netherlands;  2 present address: Tauw, P.O. Box 3015, 3502 GA Utrecht, The Netherlands;
+
+*corresponding author (roland.vandervliet@tauw.nl)
+
+In recent decades, populations of almost all meadow bird species in The Netherlands have declined, resulting in most of them being placed on the Dutch red list of threatened bird species, including Black-tailed Godwit Limosa limosa and Common Redshank Tringa totanus (van Beusekom et al. 2005). This decline has been attributed to several factors, including collecting eggs, hunting and alterations of habitat (Klomp 1951, Wymenga &amp; Engelmoer 2001). However, it is now generally accepted that the decline has been mostly caused by  a  continuing  intensification  of  agriculture  in  the breeding areas impairing reproductive success, for instance by an increased intensity of farmers' activities, increasing livestock densities, earlier and more frequent mowing, and lowering of groundwater levels (Beintema &amp; Müskens 1987, Kruk 1993, Vickery et al. 2001, Newton 2004).
+
+ing by meadow birds are hampered by an increase of elements that obstruct visibility in the otherwise open habitat (Dyrcz et al. 1981, van der Vliet et al. 2008). Klomp (1954) showed that Northern Lapwings were most effective in deterring potential predators in a treeless landscape, and calculated that Lapwings needed a field  of  at  least  5 ha  in  size  if  lined  by  trees  with  a height of 6-10 m.
+
+Another  reason  for  the  decline  that  has  gained much less attention is that opportunities for safe breed-
+
+In this paper, we review effects of landscape elements on the breeding distribution of meadow birds, focusing on the species for which sufficient data have been published,  Eurasian Oystercatcher Haematopus ostralegus ,  Northern  Lapwing Vanellus  vanellus ,  and Black-tailed Godwit Limosa limosa . Meadow birds keep a distance to elements in the landscape, thus resulting locally in lowered meadow bird densities. The distance where the population density is depressed due to the presence of a disturbing source is called the disturbance distance (cf. Veen 1973, van der Zande et al. 1980, Gill
+
+et al. 1996, Reijnen et al. 1996). The maximum disturbance distance is defined as the largest distance where a negative effect is still measurable. We use this maximum disturbance distance as an indicator of the effect that a landscape element may have on suitable habitat and on the distribution of meadow birds.
+
+We aim to distinguish between two sources of disturbance, (1) elements that hamper visibility (view-obstructing elements), and (2) flat elements that cause disturbance  by  the  presence  of  potential  predators without  impairing  visibility  (canals,  roads  and  railways). By using data on traffic intensity we separate effects of the flat elements proper and the presence of 'predators'.  Thus,  based  on  a  literature  review,  this paper  gives  an  indication  to  what  extent  different sources of disturbance limit the distribution of breeding meadow birds. Forman &amp; Alexander (1998) reviewed the disturbance caused by roads on wildlife. We use their framework to discuss our findings.
+
+## METHODS
+
+To quantify the effects of elements in the landscape on meadow  bird  populations,  we  searched  literature sources for quoted disturbance distances, using both widely available and grey literature. We assumed that distances to field borders were negligible compared to the distance to landscape elements. We aimed to find figures for the disturbance distance for the three species separately but unfortunately not all sources made this distinction. Many studies were carried out in western Netherlands, where most Dutch meadow birds breed (Bijlsma et al. 2001). In most study sites, habitat was homogeneous,  although  some  were  heterogeneous with respect to meadow vegetation type. We only included studies that had considered this heterogeneity in their conclusions. Also, most studies distinguished between  roads  with  or  without  a  supporting  viewobstructing  element.  If  they  did,  we  also  made  this distinction in our categories of elements. Studies calculated distances by either interpreting numbers of breeding meadow birds along a transect perpendicular to the disturbing source, or by interpreting field data afterwards.
+
+Effects by landscape elements on disturbance distances were statistically tested for each species separately and for the species pooled. View obstruction and traffic intensity were the independent variables. Based on the original publications, traffic intensity was scored as 'low' (values 0 and 1), 'intermediate' (value 2), and 'high' (value 3). Note that both view-obstructing and flat  elements  can  have  a  high  intensity  of  traffic. Unfortunately, inclusion of species as an independent variable led to strong deviations from normality, even after log-transformation of the data.
+
+The effect of view obstruction and traffic intensity on  the  average  disturbance  distance  was  tested  by ANOVAs. A Bonferroni post-hoc test was used to identify significant differences between levels of traffic intensity.  Data  were  log-transformed  as  data  assumptions were not met, but for Eurasian Oystercatcher log-transformation did not lead to improvement. Non-parametric tests were therefore used for this species to test main effects. Because these tests yielded similar results as the ANOVA, we only present the results of the latter. To test whether  the  presence  of  disturbing  elements  caused lower  densities  within  500 m  from  the  element,  we used  a  series  of χ 2 -tests.  As  a  preliminary  log-linear analysis  showed  no  significant  interactions  between variables, separate χ 2 -tests were made. This could only be performed for all species pooled due to the small amount of data for each species separately. To test for species-specific avoidance distances, we included species as a third independent variable.
+
+## RESULTS
+
+Visual inspection of Table 1 shows a large variation in the  distance  that  meadow  birds  keep  from  view-obstructing and flat elements. The largest disturbance distance (&gt;1 km) was reported for the high-intensively used highways. However, flat elements with low traffic intensity like cycle paths also resulted in disturbance distances of 100 m or more. Among view-obstructing elements, 'edge of a village or city' caused the largest disturbance distance. Forest edges, hedges or reed beds, - elements without traffic - showed disturbance distances of up to 350 m (Table 1). Traffic intensity was the only parameter that influenced breeding distance significantly ( χ 2 = 8.85, P = 0.012). At the lowest traffic intensity, disturbance distance was less than 500 m in 71% of the cases, whereas at intermediate and high traffic  intensities  this  value  was  as  low  as  30%  and 18%, respectively.
+
+Eurasian Oystercatcher showed the smallest disturbance distance in nine between-species comparisons, Northern  Lapwing  in  three  comparisons,  and  Blacktailed Godwit in none of the comparisons (Table 1).
+
+ANOVA-tests confirmed that Northern Lapwing and Black-tailed  Godwit  were  significantly  affected  by traffic  intensity,  but  Eurasian  Oystercatcher  was  not (Table 2). In Northern Lapwing, post-hoc tests showed
+
+Table 1. Maximum disturbance distance (m) from landscape elements for three species of meadow bird in The Netherlands during the breeding season. ( A) References do not distinguish between species; (B) References distinguish between species. Figures between parentheses indicate approximate car traffic density, in numbers per day. Species abbreviations: Oys = Eurasian Oystercatcher, Lap = Northern Lapwing, God = Black-tailed Godwit. View obstructing: 0 = no, 1 = yes. Traffic intensity: 0 and 1 = low, 2 = intermediate, 3 = high.  - = no data available.
+
+| Landscape element A          | View obstructing   | Traffic intensity   | Distance for three species combined   | Reference                                    |
+|------------------------------|--------------------|---------------------|---------------------------------------|----------------------------------------------|
+| Forest edge                  | 1                  | 0                   | 100                                   | Altenburg & Wymenga 1987                     |
+| Tree line, hedge             | 1                  | 0                   | 50                                    | Altenburg & Wymenga 1987                     |
+| Reed bed/reedy edge          | 1                  | 0                   | 50                                    | Brandsma 1991                                |
+| 'group of trees'             | 1                  | 0                   | 250-350                               | van 't Veer & Scharringa 2008                |
+| High dam without tree line   | 1                  | 0                   | 50                                    | Altenburg & Wymenga 1987                     |
+| 'building'                   | 1                  | 1                   | 175                                   | van 't Veer & Scharringa 2008                |
+| Edge village/city            | 1 1 1              | 1 1 1               | 100 >500 1200                         | Altenburg & Wymenga 1987 Wind 1977 Veen 1973 |
+| Canal without tree line      | 0                  | 0                   | 50                                    | Altenburg & Wymenga 1987                     |
+| Cycle path without tree line | 0                  | 1                   | 100                                   | Altenburg & Wymenga 1987                     |
+| Minor/municipal road         | 0                  | 1                   | 800-900                               | Veen 1973                                    |
+| Minor road with tree line    | 1                  | 1                   | 100                                   | Altenburg & Wymenga 1987                     |
+| Highway (5000-10,000)        | 0 0                | 2 2                 | 150 1200                              | Altenburg & Wymenga 1987 Veen 1973           |
+| Railway                      | 0                  | 2                   | 650                                   | Veen 1973                                    |
+
+| Landscape element                               | View        | Traffic   | Distance for species separately   | Distance for species separately   | Distance for species separately   | Reference                                                           |
+|-------------------------------------------------|-------------|-----------|-----------------------------------|-----------------------------------|-----------------------------------|---------------------------------------------------------------------|
+| B                                               | obstructing | intensity | Oys                               | Lap                               | God                               |                                                                     |
+| Plantation                                      | 1           | 0         | -                                 | 300                               | 250                               | van der Zande et al. 1980                                           |
+| Single farm house                               | 1           | 1         | 150-250 630                       | 250-350 470-630                   | 350-450 470-875                   | Wind 1978 van der Zande et al. 1980                                 |
+| Minor/municipal road                            | 0           | 1         | 0 200-300                         | 480 350-450                       | 720 250-350                       | van der Zande et al. 1980 Wind 1978                                 |
+| Provincial road (5000)                          | 0           | 2         | 0                                 | 750                               | 750                               | van der Zande 1975                                                  |
+| Provincial road (10,000)                        | 0           | 2         | 550-650                           | 600-700                           | >1000                             | Wind 1978                                                           |
+| Provincial road (5000; with ribbon-development) | 1           | 2         | 550-650                           | 600-700                           | >1000                             | Wind 1978                                                           |
+| Provincial road (5000; with scattered farms)    | 1           | 2         | 100-200                           | 450-550                           | 750-850                           | Wind 1978                                                           |
+| Highway (5000-10,000)                           | 0           | 2         | 0 >625 1700                       | 625 625 120                       | 625 625 230                       | van der Zande et al. 1980 Verstrael et al. 1983 Reijnen et al. 1996 |
+| Highway (50,000)                                | 0           | 3         | 0                                 | 2000                              | 1000                              | van der Zande 1975, van der Zande et al. 1980                       |
+|                                                 |             |           | 3530                              | 560                               | 930                               | Reijnen et al. 1996                                                 |
+|                                                 |             |           | -                                 | 1800-2100                         | 1800-2100                         | Verstrael et al. 1983                                               |
+| Railway                                         | 0           | 2         | -                                 | 250                               | 375                               | Grontmij 1981                                                       |
+
+significant differences in disturbance distance between the three categories, with shorter distances at low intensities  and  larger  distances  at  high  intensities.  In Black-tailed Godwit, distances were longer at high traffic intensities in comparison to intermediate and low traffic intensity. Disturbance distances were not affected by view-obstructing elements (Table 2). When all species were pooled, no significant effect of any of the landscape element characteristics were found (Table 2).
+
+## DISCUSSION
+
+## Possible ecological explanations
+
+Our review supports the notion that Northern Lapwing and Black-tailed Godwit keep distances from elements with  elevated  traffic  intensity.  Forman  &amp;  Alexander (1998) list several factors that can cause disturbance by roads  for  breeding  birds:  pollutants,  noise,  direct human presence, and loss of visibility. Below we discuss the relevance of these four factors for the disturbance distances that we found. (1) Pollutants like lead have an effect over distances that are much smaller than the disturbance distances than we compiled from literature (cf. Reijnen et al. 1996 and Table 1). Furthermore, an effect of pollutants does not explain distances as observed for natural elements like forests. This factor does not seem to have much weight in explaining the distribution of meadow birds. (2) Reijnen et al. (1996) postulated that noise, rather than visual stimuli, explained disturbance distances by roads. Indeed, we found the largest disturbance distance for highways, which can be considered the noisiest landscape element (Table 1). Despite this, noise may not be the only explanation for meadow bird species as they use visual cues as well as sounds in e.g.  their  display  behaviour.  (3)  Similarly, disturbance by man is an important cause of disturbance given that the largest disturbance distances were associated with highest traffic intensity (Table 1). Also, objects  with  the  lowest  traffic  intensity,  like  minor roads and cycle paths, have smaller disturbance distances than for instance highways (Table 1). However, as human disturbance is often a combination of noise and traffic it is difficult to distinguish between the most important  underlying  reason.  (4)  Because  meadow birds give priority to detect predators (van der Vliet et al. 2008), lack of visibility to scan for predators, must also partially explain disturbance distances for meadow birds  -  in  line  with  the  fourth  explanation  given  by Forman  &amp;  Alexander  (1998).  Indeed,  elements  not used by man equally had large disturbance distances.
+
+In landscapes with view-obstructing elements, meadow birds prefer breeding further away from perches used by avian predators, resulting in decreased predation rates (Berg et al. 1992, Johansson 2001, contra Ottvall et al. 2005, Wallander et al. 2006). For predators,  a  landscape  with  elements  is  attractive  due  to availability of suitable nesting sites and, for avian predators, perching opportunities (Preston 1957, Galbraith 1989,  Andrén  1992,  Brandsma  1992).  Furthermore, predators may use landscape elements as a hiding place when attacked by meadow birds (Elliot 1985). Finally, an open landscape may make avian predators more susceptible to stronger wind blows, which reduces the success rate of their attacks on potential prey (Quinn &amp; Cresswell 2004). It is therefore not surprising that predation rates for meadow birds have been found to be especially high in a landscape with scattered trees, tree lines or other elements (Wymenga &amp; Engelmoer 2001). More research is needed to elucidate the ecological understanding of disturbance distances caused by landscape elements to meadow birds, e.g. the differences between element types, and also the influence of elements for each species separately.
+
+## Data variability and uncertainty
+
+There are several weaknesses in the data sets we used (Table 1; also van der Zande et al. 1980, Altenburg &amp;
+
+Table 2. Effects of view obstruction and traffic intensity of landscape elements on breeding distances of Eurasian Oystercatcher, Northern Lapwing, Black-tailed Godwit and all species pooled (tested by ANOVAs). Significant effects are highlighted in bold.
+
+|                                 | Eurasian Oystercatcher* ( n =13)   | Eurasian Oystercatcher* ( n =13)   | Northern Lapwing** ( n =16)   | Northern Lapwing** ( n =16)   | Black-tailed Godwit ( n =16)   | Black-tailed Godwit ( n =16)   | All species pooled** ( n =45)   | All species pooled** ( n =45)   |
+|---------------------------------|------------------------------------|------------------------------------|-------------------------------|-------------------------------|--------------------------------|--------------------------------|---------------------------------|---------------------------------|
+|                                 | F                                  | P                                  | F                             | P                             | F                              | P                              | F                               | P                               |
+| Obstruction                     | 0.003                              | 0.956                              | 0.058                         | 0.813                         | 0.329                          | 0.577                          | 1.172                           | 0.285                           |
+| Traffic intensity               | 0.579                              | 0.580                              | 5.067                         | 0.025                         | 5.212                          | 0.023                          | 0.432                           | 0.652                           |
+| Obstruction × Traffic intensity | 0.127                              | 0.730                              | 0.326                         | 0.579                         | 0.845                          | 0.376                          | 0.018                           | 0.894                           |
+
+*Data assumptions violated; ** log-transformed.
+
+Wymenga  1987).  Most  importantly,  in  most  studies meadow birds were studied as one group for which the response by an element was considered the same for all species (e.g. Veen 1973, Altenburg &amp; Wymenga 1987, Brandsma 1991). However, in reality the impact of the element  is  likely  to  be  species  specific  (e.g.  van  der Zande et al. 1980, Reijnen et al. 1996). Another point of concern is a very high variability in disturbance distances. This effect is most obvious for the disturbance caused  by  roads.  For  instance  for  Eurasian  Oystercatcher, estimates for disturbance distance from highways with 5000 to 10,000 cars a day vary from 0 to 1700 meters (Table 1). Furthermore, it should be noted that several studies did not take into account effects by direct human disturbance. Finally, in some studies, data have  been  collected  in  relatively  small  areas,  where other  factors,  not  quantified  or  perhaps  overlooked, may have played a role.
+
+## Implications for conservation of the landscape
+
+Our review  shows  that  still  little  is  known  how  elements in the landscape influence the breeding distribution of meadow birds. Highways resulted in the highest reported disturbance distances (Table 1). For the western part of The Netherlands, 16% less pairs of Blacktailed Godwit were present because of the disturbance distance along highways (Reijnen et al. 1997). We presume that with the ongoing alteration of the landscape even fewer pairs are breeding as other elements add to unsuitable habitat. Larsen &amp; Madsen (2000) similarly demonstrated  the  influence  of  view-obstructing  elements in open grassland habitats for wintering Pinkfooted Goose Anser brachyrhynchus . They calculated an effective loss of 68% of the total field area due to the presence of view-obstructing elements.
+
+In this respect, the extreme site fidelity shown by meadow birds to the previous year's breeding site, especially  when  a  breeding  attempt  has  been  successful (Klomp 1954, Thompson &amp; Hale 1989, Groen 1993, Johansson 2001), may be a disadvantageous trait in a changing landscape. It may lead to a higher extinction risk  of  local  meadow  bird  populations  (Kruk et al. 1998).  In  contrast,  in  an  unchanged  landscape,  extreme site fidelity may be beneficiary from an evolutionary  point-of-view,  as  the  birds  are  familiar  with local environmental factors and, possibly, conspecifics (Johansson 2001). Because of site fidelity, not only continuity of the management  of  agricultural fields (Beintema &amp; Rijk 1988, Beintema et al. 1995) but also the conservation of an open landscape appears to be essential for the conservation of meadow birds (van der Vliet et al. 2008). We consider that the adverse effect of development on openness, leading to a reduced predator visibility, may become a more important factor for meadow birds in the near future.
+
+On the positive side, meadow birds are known to have  adapted  to  changes  in  their  breeding  habitat. Mulder (1972) and Beintema et al. (1985) showed that meadow birds were able to respond to the intensification of agricultural management by breeding earlier in response  to  an  earlier  start  of  agricultural  activities. Likewise,  many  pairs  of  Eurasian  Oystercatcher  and Northern  Lapwing  breed  in  arable  fields  nowadays (Klomp 1954, Imboden 1970, Kooiker 1984, Galbraith 1989,  Berg et al. 1992),  although  these  are  still shunned  by  grassland  specialists like Black-tailed Godwit (Mulder 1972). Incidentally, Eurasian Oystercatcher and Northern Lapwing are generally also the  least  affected  by  the  presence  of  landscape  elements, whereas Black-tailed Godwit seems to be most affected. It seems that meadow birds may also be able to cope with the loss of predator visibility. De Molenaar et al. (2000), for instance, found that birds that arrived later at their breeding area chose their breeding sites close to road illumination, because the earlier birds already bred at sites the farthest from this object. In this way,  the  later  birds,  having  the  choice  between  no breeding or breeding at a less favourable site, showed to have adapted to a certain extent to the presence of the disturbing object.
+
+Many  policy  measures  have  been  taken  by  the Dutch government to preserve meadow bird species, and their habitat, because they are internationally important. Such measures have often been directed to the improvement of nesting and recruitment success, and include for instance creation of reserves, facilitation of nest  protection  schemes  by  volunteers,  payment  to farmers for successfully protecting nests while carrying out  agricultural  activities,  and  payment  for  delay  of agricultural  activities  during  the  breeding  season. However, up to now such measures did not stop the decline of meadow bird species (e.g. Kleijn et al. 2001, Berendse et al. 2004, Schekkerman 2008). One of the reasons might be that the landscape context has so far not been taken into account, making an effort to improve the suitability of breeding sites less successful. For meadow bird conservation, priority should be given to the protection of open and quiet landscapes (without much human disturbance). If such landscapes are to be disclosed,  sources  of  disturbance  of  the  landscape, stemming from a loss of openness or from the presence of human beings, should perhaps be concentrated. It would  make  one  edge  of  the  meadow  bird  habitat disturbed  but  would  leave  the  remainder  open  and
+
+undisturbed.  We  argue  that,  before  taking  measures directed to the benefit of breeding meadow birds, the already present human disturbance in and the openness of the landscape should be considered.
+
+## ACKNOWLEDGEMENTS
+
+We  thank  Margien  Bootsma,  Tom  van  der  Have,  Arie  van Noordwijk, Max Rietkerk, Peter de Ruiter, Eddy Wymenga and two anonymous referees for their useful comments on earlier drafts of this text.
+
+## REFERENCES
+
+- Altenburg W. &amp; Wymenga E. 1987. Natuurwetenschappelijk onderzoek  voor  de  evaluatie  van  het  beheersplan  MiddenOpsterland II. De vegetatie en weidevogels in relatie tot het graslandgebruik. Directie Beheer Landbouwgronden, Utrecht, The Netherlands.
+- Andrén H. 1992. Corvid density and nest predation in relation to forest fragmentation: a landscape perspective. Ecology 73: 794-804.
+- Beintema A.J. &amp; Müskens G.J.D.M. 1987. Nesting success of birds  breeding  in  Dutch  agricultural  grasslands.  J.  Appl. Ecol. 24: 743-758.
+- Beintema A.J. &amp; Rijk P .J. 1988. Kosten en baten van reservaatsbeheer  en  beheersovereenkomsten  in  een  aantal  weidevogelgebieden. LEI, 's-Gravenhage/Rijksinstituut voor Natuurbeheer, Arnhem, the Netherlands.
+- Beintema A.J.,  Beintema-Hietbrink  R.J.  &amp;  Müskens  G.J.D.M. 1985. A shift in timing of breeding in meadow birds. Ardea 73: 83-89.
+- Beintema A.J., Moedt O. &amp; Ellinger D. 1995. Ecologische atlas van de Nederlandse weidevogels. Schuyt &amp; Co, Haarlem, the Netherlands.
+- Berendse F ., Chamberlain D., Kleijn D. &amp; Schekkerman H. 2004. Declining biodiversity in agricultural landscapes and the effectiveness of agri-environment schemes. Ambio 33: 499-502.
+- Berg Å., Lindberg T . &amp; Källebrink K.G. 1992. Hatching success of Lapwings on farmland: differences between habitats and colonies of different sizes. J. Anim. Ecol. 61: 469-476.
+- Bijlsma R.G., Hustings F . &amp; Camphuysen C.J. 2001. Common and scarce birds of the Netherlands / Algemene en schaarse vogels  van  Nederland.  Avifauna  van  Nederland  2.  GMB Uitgeverij, Haarlem/KNNV Uitgeverij, Utrecht, the Netherlands.
+- Brandsma O.H. 1991. Weidevogelbeheer in het relatienotagebied Giethoorn-Wanneperveen. Levende Natuur 92: 5-12.
+- Brandsma O.H. 1992. Onderzoek weidevogelbeheer en bodemfauna in het reservaatsgebied Giethoorn-Wanneperveen V (1991). Directie Beheer Landbouwgronden, Utrecht/ Provincie Overijssel, Zwolle, the Netherlands.
+- de Molenaar J.G., Jonkers D.A. &amp; Sanders M.E. 2000. Road illumination and nature 3. Local influence of road lights on a Black-tailed Godwit ( Limosa l. limosa ) population. Alterra, Wageningen, the Netherlands.
+- Dyrcz A., Witkowski J. &amp; Okulewicz J. 1981. Nesting of 'timid' waders in the vicinity of 'bold' ones as an antipredator adaptation. Ibis 123: 542-545.
+- Elliot R.D. 1985. The exclusion of avian predators from aggregations of nesting Lapwings ( Vanellus vanellus ). Anim. Behav. 33: 308-314.
+- Forman R.T.T. &amp; Alexander L.E. 1998. Roads and their major ecological effects. Ann. Rev. Ecol. Syst. 29: 207-231.
+- Galbraith H. 1989. Arrival and habitat use by Lapwings Vanellus vanellus in the early breeding season. Ibis 131: 377-388.
+- Gill J.A., Sutherland W .J. &amp; Watkinson A.R. 1996. A method to quantify the effects of human disturbance on animal populations. J. Appl. Ecol. 33: 786-792.
+- Groen N.M. 1993. Breeding site tenacity and natal philopatry in the Black-tailed Godwit Limosa l. limosa . Ardea 81: 107-113.
+- Grontmij 1981. Ecologische onderzoeken in het 'oude land' naar aanleiding van de aanleg van de Flevolijn. Grontmij, Zeist, the Netherlands.
+- Imboden Chr. 1970. Zur Ökologie einer Randzonen-Population des  Kiebitz Vanellus  vanellus in  der  Schweitz.  Ornithologische Beobachter 67: 41-58.
+- Johansson T . 2001. Habitat selection, nest predation and conservation  biology  in  a  Black-tailed  Godwit  ( Limosa  limosa ) population. PhD thesis, Uppsala University, Sweden.
+- Kleijn D., Berendse F ., Smit R. &amp; Gilissen N. 2001. Agri-environment  schemes  do  not  effectively  protect  biodiversity  in Dutch agricultural landscapes. Nature 413: 723-725.
+- Klomp H. 1951. Over de achteruitgang van de Kievit, Vanellus vanellus (L.), in Nederland en gegevens over het legmechanisme en het eiproductie-vermogen. Ardea 39: 143-182.
+- Klomp H. 1954. De terreinkeus van de Kievit, Vanellus vanellus (L.). Ardea 42: 1-139.
+- Kooiker  G.  1984.  Brutökologische  Untersuchungen  an  einer Population des Kiebitzes ( Vanellus vanellus ). Vogelwelt 105: 121-137.
+- Kruk M. 1993. Meadow bird conservation on modern commercial dairy farms  in the western  peat  district of  the Netherlands: possibilities and limitations. PhD-thesis, Rijksuniversiteit Leiden, the Netherlands.
+- Kruk  M.,  Noordervliet  M.A.W.  &amp;  ter  Keurs  W .J.  1998.  Natal philopatry in the Black-tailed Godwit Limosa limosa L. and its possible implications for conservation. Ring. Migrat. 19: 13-16.
+- Larsen  J.K.  &amp;  Madsen  J.  2000.  Effects  of  wind  turbines  and other physical elements on field utilization by pink-footed geese  ( Anser  brachyrhynchus ):  a  landscape  perspective. Landscape Ecol. 15: 755-764.
+- Mulder Th. 1972. De Grutto ( Limosa limosa (L.)) in Nederland. Aantallen, verspreiding, terreinkeuze, trek en overwintering. Wetenschappelijke mededelingen 90. KNNV, Hoogwoud, the Netherlands.
+- Newton I. 2004. The recent declines of farmland bird populations in Britain: an appraisal of causal factors and conservation actions. Ibis 146: 579-600.
+- Ottvall R., Larsson K. &amp; Smith H.G. 2005. Nesting success in Redshank Tringa totanus breeding on coastal meadows and the importance of habitat features used as perches by avian predators. Bird Study 52: 289-296.
+- Preston F .W . 1957. The look-out perch as a factor in predation by Crows. Wilson Bull. 69: 368-370.
+
+- Quinn J.L. &amp; Cresswell W. 2004. Predator hunting behaviour and prey vulnerability. J. Anim. Ecol. 73: 143-154.
+- Reijnen R., Foppen R. &amp; Meeuwsen H. 1996. The effects of traffic on the density of breeding birds in Dutch agricultural grasslands. Biol. Conserv. 75: 255-260.
+- Reijnen R., Foppen R. &amp; Veenbaas G. 1997. Disturbance by traffic of breeding birds: evaluation of the effect and considerations  in  planning  and  managing  road  corridors.  Biodiv. Conserv. 6: 567-581.
+- Schekkerman H. 2008. Precocial problems: shorebird chick performance in relation to weather, farming, and predation. PhD-thesis, University of Groningen, the Netherlands.
+- Thompson P .S. &amp; Hale W.G. 1989. Breeding site fidelity and natal philopatry in the Redshank Tringa totanus . Ibis 131: 214-224.
+- van Beusekom R., Huigen P ., Hustings F ., de Pater K. &amp; Thissen J. (eds) 2005. Rode Lijst van de Nederlandse Broedvogels. Tirion, Baarn.
+- van der Vliet R.E., Schuller E. &amp; Wassen M.J. 2008. Avian predators in a meadow landscape: consequences of their occurrence  for  breeding  open-area  birds.  J.  Avian  Biol.  39: 523-529.
+- van der Zande A.N. 1975. De beïnvloeding van weidevogels door wegen. Master Thesis, Rijksuniversiteit Leiden, Leiden, the Netherlands.
+- van der Zande A.N., ter Keurs W .J. &amp; van der Weijden W .J. 1980. The impact of roads on the densities of four bird species in an open field habitat - evidence of a long-distance effect. Biol. Conserv. 18: 299-321.
+- van 't Veer R. &amp; Scharringa C.J.G. 2008. Weidevogelonderzoek Laag Holland 2006. Landschap Noord-Holland, Castricum, the Netherlands.
+- Veen J.  1973.  The  disturbance  of  meadow  bird  populations. Stedebouw &amp; Volkshuisvesting 54: 16-26.
+- Verstrael T ., ter Keurs W ., van der Zande A. &amp; van der Weijden W.  1983.  De  verstoring  van  weidevogelpopulaties  door wegen. Vogeljaar 31: 138-151.
+- Vickery J.A., Tallowin J.R., Feber R.E., Asteraki E.J., Atkinson P .W ., Fuller R.J., &amp; Brown V .K. 2001. The management of lowland neutral grasslands in Britain: effects of agricultural practices on birds and their food resources. J. Appl. Ecol. 38: 647-664.
+- Wallander J., Isaksson D. &amp; Lenberg T . 2006. Wader nest distribution and predation in relation to man-made structures on coastal pastures. Biol. Conserv. 132: 343-350.
+- Wind H.B. 1977. De invloed van wegen en boerderijen op de verspreiding  en  het  voorkomen  van  weidevogels.  Master Thesis,  Landbouw  Hogeschool,  Wageningen,  the  Netherlands.
+- Wind H. 1978. De invloed van wegen en boerderijen op de verspreiding van weidevogels. Vanellus 31: 72-76.
+- Wymenga E. &amp; Engelmoer M. 2001. Takomst foar de Skries. Altenburg &amp; Wymenga, Veenwouden, the Netherlands.
+
+## SAMENVATTING
+
+Weidevogels hebben een voorkeur voor een open landschap met zo min mogelijk landschapselementen die hun blikveld in de weg staan. Op deze manier kunnen predatoren op tijd worden opgemerkt en weggejaagd. Ook platte landschapselementen, zoals wegen, zouden een verstoring van het blikveld kunnen opleveren door de bewegingen van de gebruikers van die elementen op de achtergrond. Het resultaat van deze verstoringen zou kunnen zijn dat weidevogels een afstand tot dergelijke landschapselementen aanhouden bij de selectie van een geschikte plek om te broeden, met als gevolg een verminderde dichtheid in vergelijking tot een situatie waarbij deze elementen er niet zouden zijn geweest. Wij hebben in de literatuur gezocht of hiervoor aanwijzingen zijn te vinden voor Scholekster Haematopus ostralegus , Kievit Vanellus vanellus en Grutto Limosa limosa . De resultaten van dit literatuuronderzoek laten zien dat deze soorten inderdaad een afstand aanhouden tot beide typen landschapselementen. Voor snelwegen en stads- en dorpsranden  kan  die  afstand  meer  dan  een  kilometer  bedragen.  De grootste verstoringsafstand werd gevonden voor wegen met een hoge gebruikersdruk. Maar ook natuurlijke elementen, zoals bosranden en rietvelden, hebben een negatieve invloed op vestigingsmogelijkheden voor weidevogels. De soorten verschillen wel in hun tolerantie ten opzichte van de vestigingsmogelijkheid in zulke gebieden. De Scholekster is het meest tolerant, de Grutto het minst. Wij beargumenteren waarom de inrichting van het landschap aandacht verdient tijdens de planning van beleid.
+
+Corresponding editor: Julia Stahl Received: 8 July 2008; provisionally accepted 5 May 2009; accepted 2 September 2010

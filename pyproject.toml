@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "vfn-preprocessing"
+version = "0.1.0"
+description = "Preprocessing of different file formats for chunking and RAG"
+authors = ["Deltares Research <support@deltares.nl>"]
+readme = "README.md"
+packages = [{include = "vfn_preprocessing"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+unstructured = {version = "^0.16.0", extras = ["pdf", "docx", "xlsx", "pptx"]}
+markitdown = "^0.0.1a2"
+docling = "^2.0.0"
+click = "^8.1.0"
+rich = "^13.0.0"
+unstructured-client = "^0.42.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+pytest-cov = "^5.0.0"
+black = "^24.0.0"
+ruff = "^0.8.0"
+
+[tool.poetry.scripts]
+vfn-preprocess = "vfn_preprocessing.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

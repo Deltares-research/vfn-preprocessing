@@ -1,0 +1,27 @@
+# Sample Document
+
+This is a sample document to test the VFN preprocessing tool.
+
+## Introduction
+
+The VFN preprocessing tool is designed to convert various document formats to markdown.
+
+## Features
+
+- Multiple converter support
+- Wide format compatibility
+- Easy-to-use CLI
+
+## Technical Details
+
+The tool supports the following converters:
+
+1. Unstructured.io
+2. MarkItDown
+3. Docling
+
+Each converter has its own strengths and use cases.
+
+## Conclusion
+
+This document demonstrates the basic structure that can be converted.
