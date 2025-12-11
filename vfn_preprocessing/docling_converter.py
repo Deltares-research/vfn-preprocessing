@@ -14,8 +14,9 @@ class DoclingConverter(DocumentConverter):
         """Initialize the Docling converter."""
         super().__init__("Docling")
         self._supported_formats = {
-            '.pdf', '.docx', '.pptx', '.html',
-            '.asciidoc', '.md', '.markdown'
+            '.pdf', '.docx', '.pptx', '.xlsx',
+            '.png', '.jpg', '.jpeg',
+            '.html', '.asciidoc', '.md'
         }
 
     def supports_format(self, file_extension: str) -> bool:

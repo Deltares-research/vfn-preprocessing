@@ -59,10 +59,11 @@ vfn-preprocess list-converters
 - Audio: WAV, MP3
 - Text: TXT
 
-**Docling** (7 formats):
-- Documents: PDF, DOCX, PPTX
+**Docling** (9 formats):
+- Documents: PDF, DOCX, PPTX, XLSX
+- Images: PNG, JPG, JPEG
 - Web: HTML
-- Text: ASCIIDOC, MD, MARKDOWN
+- Text: ASCIIDOC, MD
 
 ### 4. Testing
 
@@ -150,17 +151,9 @@ if result['success']:
     print(f"Converted in {result['time_seconds']:.2f}s")
 ```
 
-## Performance Characteristics
+## Performance Comparison
 
-Based on testing with a sample text document:
-
-| Converter       | Speed    | Output Quality | Best For |
-|----------------|----------|----------------|----------|
-| MarkItDown     | Fastest  | Clean, accurate | Quick conversions, wide format support |
-| Unstructured.io| Medium   | Element-aware  | Complex documents, detailed extraction |
-| Docling        | Slower   | High-quality   | PDFs, layout preservation |
-
-*Note: Performance varies significantly based on document type and complexity*
+For detailed performance characteristics and comparison results across different document types, see the [Comparison Report](docs/comparison-report.md).
 
 ## Key Design Decisions
 
@@ -197,20 +190,7 @@ poetry run pytest
 poetry run pytest --cov=vfn_preprocessing
 ```
 
-## Future Enhancements
 
-Potential improvements for future versions:
-
-1. **Batch Processing**: Process entire directories of documents
-2. **Output Formats**: Support additional output formats (HTML, JSON, etc.)
-3. **Configuration Files**: Allow users to save converter preferences
-4. **Parallel Processing**: Process multiple documents simultaneously
-5. **Web Interface**: Add a web UI for easier access
-6. **Docker Support**: Containerize the application
-7. **Cloud Integration**: Support for S3, Google Cloud Storage, etc.
-8. **Quality Metrics**: Analyze and score conversion quality
-9. **Diff Tool**: Compare outputs from different converters
-10. **Custom Converters**: Plugin system for user-defined converters
 
 ## Troubleshooting
 
