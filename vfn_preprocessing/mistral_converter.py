@@ -141,6 +141,7 @@ class MistralConverter(DocumentConverter):
             text_output += page.get("markdown", "")
             images = page.get("images", [])
             for img in images:
+                #TODO: check document type and include accordingly (only charts or diagrams for example)
                 text_output += json.loads(img.get("image_annotation", "")).get("summary", "")
         return text_output
 
