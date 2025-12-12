@@ -146,9 +146,10 @@ if converter.supports_format('.pdf'):
 - Text: TXT
 
 ### Docling
-- Documents: PDF, DOCX, PPTX
+- Documents: PDF, DOCX, PPTX, XLSX
+- Images: PNG, JPG, JPEG
 - Web: HTML
-- Text: ASCIIDOC, MD, MARKDOWN
+- Text: ASCIIDOC, MD
 
 ### Mistral
 - Documents: PDF, DOCX, PPTX, XLSX
