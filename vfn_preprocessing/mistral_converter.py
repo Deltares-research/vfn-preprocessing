@@ -13,11 +13,39 @@ from PyPDF2 import PdfReader, PdfWriter
 
 from vfn_preprocessing.base import DocumentConverter
 
+bbox_annotation_format = {
+  "type": "json_schema",
+  "json_schema": {
+    "schema": {
+      "properties": {
+        "document_type": {
+          "title": "Document_Type",
+          "description": "The type of the image.",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "description": "Summarize the image.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_type",
+        "summary"
+      ],
+      "title": "BBOXAnnotation",
+      "type": "object",
+      "additionalProperties": False
+    },
+    "name": "document_annotation",
+    "strict": True
+  }
+}
 
 class MistralConverter(DocumentConverter):
     """Document converter using Mistral Document AI API."""
 
-    def __init__(self, api_key: str = None, api_url: str = None):
+    def __init__(self):
         """Initialize the Mistral converter.
         
         Args:
@@ -26,14 +54,14 @@ class MistralConverter(DocumentConverter):
         """
         super().__init__("Mistral")
         load_dotenv()
-        self.api_key = api_key or os.getenv("MISTRAL_API_KEY", "")
-        self.api_url = api_url or os.getenv("MISTRAL_API_URL", "")
+        self.api_key = os.getenv("MISTRAL_API_KEY", "")
+        self.api_url = os.getenv("MISTRAL_API_URL", "")
         self._supported_formats = {'.pdf', '.jpg', '.jpeg', '.png', '.docx', '.xlsx', '.pptx'}
         
         if not self.api_key:
-            raise ValueError("Mistral API key must be provided or set in MISTRAL_API_KEY environment variable")
+            raise ValueError("Mistral API key must be set in MISTRAL_API_KEY environment variable")
         if not self.api_url:
-            raise ValueError("Mistral API URL must be provided or set in MISTRAL_API_URL environment variable")
+            raise ValueError("Mistral API URL must be set in MISTRAL_API_URL environment variable")
 
     def supports_format(self, file_extension: str) -> bool:
         """Check if this converter supports the given file format.
@@ -95,6 +123,7 @@ class MistralConverter(DocumentConverter):
                 "type": "document_url",
                 "document_url": f"data:{mime_type};base64,{encoded_chunk}"
             },
+            "bbox_annotation_format": bbox_annotation_format,
             "include_image_base64": include_image_base64
         })
         
@@ -102,7 +131,7 @@ class MistralConverter(DocumentConverter):
             'Content-Type': 'application/json',
             'Authorization': f'Bearer {self.api_key}'
         }
-        
+
         response = requests.post(self.api_url, headers=headers, data=payload)
         response.raise_for_status()
         
@@ -110,7 +139,9 @@ class MistralConverter(DocumentConverter):
         text_output = ""
         for page in response_data.get("pages", []):
             text_output += page.get("markdown", "")
-        
+            images = page.get("images", [])
+            for img in images:
+                text_output += json.loads(img.get("image_annotation", "")).get("summary", "")
         return text_output
 
     def convert(self, input_path: Path, output_path: Path, **kwargs) -> Dict[str, Any]:
@@ -150,7 +181,6 @@ class MistralConverter(DocumentConverter):
             
             text_output = ""
             total_pages = 0
-            num_chunks = 1
             
             # Check if PDF needs splitting
             if file_extension == '.pdf':
@@ -160,7 +190,6 @@ class MistralConverter(DocumentConverter):
                 if total_pages > max_pages:
                     # Split and process in chunks
                     chunks = self._split_pdf(input_path, max_pages)
-                    num_chunks = len(chunks)
                     
                     for i, chunk_data in enumerate(chunks):
                         chunk_text = self._convert_chunk(chunk_data, mime_type, model, include_image_base64)
@@ -190,7 +219,7 @@ class MistralConverter(DocumentConverter):
                 "converter": self.name,
                 "input_path": str(input_path),
                 "output_path": str(output_path),
-                "conversion_time": conversion_time,
+                "time_seconds": conversion_time,
                 "num_pages": total_pages if total_pages > 0 else "unknown",
                 "model": model
             }
@@ -200,9 +229,9 @@ class MistralConverter(DocumentConverter):
             return {
                 "success": False,
                 "converter": self.name,
-                "input_file": str(input_path),
-                "output_file": str(output_path),
-                "conversion_time": conversion_time,
+                "input_path": str(input_path),
+                "output_path": str(output_path),
+                "time_seconds": conversion_time,
                 "error": f"API request failed: {str(e)}"
             }
         except Exception as e:
@@ -210,8 +239,8 @@ class MistralConverter(DocumentConverter):
             return {
                 "success": False,
                 "converter": self.name,
-                "input_file": str(input_path),
-                "output_file": str(output_path),
-                "conversion_time": conversion_time,
+                "input_path": str(input_path),
+                "output_path": str(output_path),
+                "time_seconds": conversion_time,
                 "error": str(e)
             }
