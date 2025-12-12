@@ -15,6 +15,9 @@ vfn-preprocess convert example.pdf output_markitdown.md --converter markitdown
 
 # Using Docling
 vfn-preprocess convert example.pdf output_docling.md --converter docling
+
+# Using Mistral Document AI
+vfn-preprocess convert example.pdf output_mistral.md --converter mistral
 ```
 
 ### 2. Compare All Converters
@@ -31,6 +34,10 @@ vfn-preprocess compare example.pdf
 ```python
 from pathlib import Path
 from vfn_preprocessing import UnstructuredConverter
+
+# For Mistral converter, ensure MISTRAL_API_KEY and MISTRAL_API_URL are set in .env
+# from vfn_preprocessing import MistralConverter
+# converter = MistralConverter()
 
 converter = UnstructuredConverter()
 result = converter.convert(
@@ -49,14 +56,16 @@ from pathlib import Path
 from vfn_preprocessing import (
     UnstructuredConverter,
     MarkitdownConverter,
-    DoclingConverter
+    DoclingConverter,
+    MistralConverter
 )
 
 input_file = Path('example.pdf')
 converters = [
     UnstructuredConverter(),
     MarkitdownConverter(),
-    DoclingConverter()
+    DoclingConverter(),
+    MistralConverter()  # Requires MISTRAL_API_KEY and MISTRAL_API_URL in .env
 ]
 
 results = []

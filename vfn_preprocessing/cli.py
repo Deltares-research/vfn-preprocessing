@@ -13,6 +13,7 @@ from vfn_preprocessing import (
     UnstructuredConverter,
     MarkitdownConverter,
     DoclingConverter,
+    MistralConverter
 )
 
 console = Console()
@@ -24,6 +25,7 @@ def get_all_converters():
         UnstructuredConverter(),
         MarkitdownConverter(),
         DoclingConverter(),
+        MistralConverter()
     ]
 
 
@@ -33,6 +35,7 @@ def get_converter_by_name(name: str):
         "unstructured": UnstructuredConverter,
         "markitdown": MarkitdownConverter,
         "docling": DoclingConverter,
+        "mistral": MistralConverter
     }
     converter_class = converters.get(name.lower())
     if converter_class:
@@ -53,7 +56,7 @@ def main():
 @click.option(
     "--converter",
     "-c",
-    type=click.Choice(["unstructured", "markitdown", "docling"], case_sensitive=False),
+    type=click.Choice(["unstructured", "markitdown", "docling", "mistral"], case_sensitive=False),
     required=True,
     help="Converter to use for processing",
 )
@@ -109,7 +112,7 @@ def convert(input_file: Path, output_file: Path, converter: str):
     "--converters",
     "-c",
     multiple=True,
-    type=click.Choice(["unstructured", "markitdown", "docling"], case_sensitive=False),
+    type=click.Choice(["unstructured", "markitdown", "docling", "mistral"], case_sensitive=False),
     help="Specific converters to use (default: all compatible)",
 )
 def compare(input_file: Path, output_dir: Optional[Path], converters: tuple):

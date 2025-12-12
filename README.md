@@ -4,10 +4,11 @@ Preprocessing of different file formats for chunking and RAG. This tool compares
 
 ## Features
 
-- **Multiple Converter Support**: Compare three different document processing libraries:
+- **Multiple Converter Support**: Compare four different document processing libraries:
   - **Unstructured.io**: Advanced document parsing with element detection and formula handling
   - **MarkItDown**: Microsoft's document-to-markdown converter
   - **Docling**: IBM's document understanding and conversion tool
+  - **Mistral**: Direct LLM-based markdown parsing using Mistral Document AI API
 
 - **Formula Support**: Mathematical formulas are automatically converted to LaTeX format in Markdown (inline `$...$` for short formulas, display `$$...$$` for longer equations)
 
@@ -25,6 +26,22 @@ This project uses [Poetry](https://python-poetry.org/) for dependency management
 
 - Python 3.10 or higher
 - Poetry (install with `pip install poetry`)
+
+### Environment Variables
+
+Some converters require API keys. Create a `.env` file in the project root with the following format:
+
+```bash
+# Unstructured.io API key (optional - for cloud API usage)
+UNSTRUCTURED_API_KEY=""
+
+# Mistral API credentials (required for Mistral converter)
+# Get these from the Azure Portal
+MISTRAL_API_URL=""
+MISTRAL_API_KEY=""
+```
+
+**Note**: The Mistral API URL and key come from the Azure Portal when you set up Mistral AI services.
 
 ### Install Dependencies
 
@@ -54,6 +71,7 @@ Available converters:
 - `unstructured` - Unstructured.io
 - `markitdown` - MarkItDown
 - `docling` - Docling
+- `mistral` - Mistral Document AI API
 
 #### 2. Compare Multiple Converters
 
@@ -89,10 +107,13 @@ You can also use the converters directly in Python code:
 
 ```python
 from pathlib import Path
-from vfn_preprocessing import UnstructuredConverter, MarkitdownConverter, DoclingConverter
+from vfn_preprocessing import UnstructuredConverter, MarkitdownConverter, DoclingConverter, MistralConverter
 
 # Initialize a converter
 converter = UnstructuredConverter()
+
+# Or use Mistral for LLM-based conversion
+# converter = MistralConverter()  # Requires MISTRAL_API_KEY and MISTRAL_API_URL in .env
 
 # Check format support
 if converter.supports_format('.pdf'):
@@ -130,6 +151,10 @@ if converter.supports_format('.pdf'):
 - Web: HTML
 - Text: ASCIIDOC, MD
 
+### Mistral
+- Documents: PDF, DOCX, PPTX, XLSX
+- Images: JPG, JPEG, PNG
+
 ## Development
 
 ### Running Tests
@@ -165,7 +190,8 @@ vfn-preprocessing/
 │   ├── cli.py                 # Command-line interface
 │   ├── unstructured_converter.py   # Unstructured.io implementation
 │   ├── markitdown_converter.py     # MarkItDown implementation
-│   └── docling_converter.py        # Docling implementation
+│   ├── docling_converter.py        # Docling implementation
+│   └── mistral_converter.py        # Mistral Document AI implementation
 ├── tests/                     # Test suite
 │   ├── test_base.py          # Base class tests
 │   └── test_converters.py    # Converter tests
@@ -184,7 +210,8 @@ This project is part of Deltares Research.
 
 ## Acknowledgments
 
-This tool integrates the following open-source libraries:
+This tool integrates the following libraries and services:
 - [Unstructured.io](https://github.com/Unstructured-IO/unstructured)
 - [MarkItDown](https://github.com/microsoft/markitdown)
 - [Docling](https://github.com/DS4SD/docling)
+- [Mistral AI](https://mistral.ai/) - Document AI API for LLM-based conversion

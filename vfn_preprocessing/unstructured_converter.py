@@ -5,6 +5,8 @@ import time
 from pathlib import Path
 from typing import Dict, Any
 
+from dotenv import load_dotenv
+
 from vfn_preprocessing.base import DocumentConverter
 
 
@@ -134,6 +136,7 @@ class UnstructuredConverter(DocumentConverter):
             # elements = partition(str(input_path))
 
             # Initialize client with API key from environment
+            load_dotenv()
             api_key = os.getenv("UNSTRUCTURED_API_KEY")
             if not api_key:
                 print("Warning: UNSTRUCTURED_API_KEY not found in environment")
