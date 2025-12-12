@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a Python application for preprocessing unstructured documents and converting them to structured Markdown format. The application uses Poetry for package management and integrates three popular document processing libraries for comparison purposes.
+This project implements a Python application for preprocessing unstructured documents and converting them to structured Markdown format. The application uses Poetry for package management and integrates four document processing libraries for comparison purposes, including an LLM-based converter.
 
 ## Implemented Features
 
@@ -10,10 +10,11 @@ This project implements a Python application for preprocessing unstructured docu
 
 A clean, extensible architecture with:
 - **Base Interface**: `DocumentConverter` abstract base class defining the converter contract
-- **Three Implementations**:
+- **Four Implementations**:
   - `UnstructuredConverter` - Using Unstructured.io library
   - `MarkitdownConverter` - Using Microsoft's MarkItDown library
   - `DoclingConverter` - Using IBM's Docling library
+  - `MistralConverter` - Using Mistral Document AI API for LLM-based conversion
 
 ### 2. Command-Line Interface (CLI)
 
@@ -63,6 +64,10 @@ vfn-preprocess list-converters
 - Documents: PDF, DOCX, PPTX
 - Web: HTML
 - Text: ASCIIDOC, MD, MARKDOWN
+
+**Mistral** (6 formats):
+- Documents: PDF, DOCX, PPTX, XLSX
+- Images: JPG, JPEG, PNG
 
 ### 4. Testing
 

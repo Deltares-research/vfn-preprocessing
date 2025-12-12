@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "vfn-preprocessing"
 version = "0.1.0"
-description = "Preprocessing of different file formats for chunking and RAG"
+description = "Preprocessing of different file formats for chunking and RAG using multiple libraries including Unstructured, MarkItDown, Docling, and Mistral AI"
 authors = ["Deltares Research <support@deltares.nl>"]
 readme = "README.md"
 packages = [{include = "vfn_preprocessing"}]
