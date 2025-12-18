@@ -139,10 +139,12 @@ class MistralConverter(DocumentConverter):
         text_output = ""
         for page in response_data.get("pages", []):
             text_output += page.get("markdown", "")
+            text_output += "\n\n"
             images = page.get("images", [])
             for img in images:
                 #TODO: check document type and include accordingly (only charts or diagrams for example)
                 text_output += json.loads(img.get("image_annotation", "")).get("summary", "")
+                text_output += "\n\n"
         return text_output
 
     def convert(self, input_path: Path, output_path: Path, **kwargs) -> Dict[str, Any]:
