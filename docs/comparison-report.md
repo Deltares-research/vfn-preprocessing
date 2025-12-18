@@ -58,6 +58,8 @@ The table below gives a generic overview of the findings when comparing the conv
 
 Overall, Mistral gives very good results for a fraction of the time needed for Docling. Moreover, a very Mistral is capable of annotating images in a very precise way (cf appendix). The prompt only asks for a description of a few sentences but already the response can be exploited to bring more clarity to the rest of the text. We can also adapt the prompt endlessly to ensure more precise data and even extract formated tables of raw data if a chart is represented for example.
 
+**Nota bene:** This recommendation is only valid for PDF, other formats could lead to better results. For example Mark-it-down does not format PDFs except than extract the text, but according to the official documentation, it can do it for the other file formats that it supports. It yielded the best results on a .xlsx file that generated the above tables.
+
 ## Appendix
 
 ### Different images and their description by Mistral
